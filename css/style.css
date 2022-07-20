@@ -59,16 +59,68 @@
 }
 
 .item a:hover {
-	color: #d25;
+	color: #14c;
 }
 
 .item p {
 	color: #888;
 }
 
+.flows {
+	margin: auto;
+	max-width: 640px;
+}
+
+.left {
+	float: left;
+	margin: 0 16px 8px 0;
+}
+
+.right {
+	float: right;
+	margin: 0 0 8px;
+}
+
+.flow {
+	width: 308px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.flow a {
+	text-decoration: none;
+	color: #36e;
+}
+
+.flow a:hover {
+	color: #14c;
+}
+
+.flow img {
+	display: block;
+	width: 100%;
+}
+
+.flow span {
+	display: block;
+	padding: 16px 8px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+}
+
 @media screen and (max-width: 672px) {
 	.item {
 		margin: 8px 16px;
+	}
+	
+	.left, .right {
+		float: none;
+		margin: 8px 16px;
+	}
+	
+	.flow {
+		width: auto;
 	}
 }
 
@@ -96,7 +148,7 @@
 }
 
 .article a:hover {
-	color: #d25;
+	color: #14c;
 }
 
 .sup {
