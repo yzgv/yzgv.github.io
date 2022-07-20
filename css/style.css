@@ -9,7 +9,7 @@
 
 .header {
 	border-bottom: 6px solid #fe3;
-	background-color: #37c;
+	background-color: #36e;
 }
 
 .nav {
@@ -24,7 +24,7 @@
 
 .nav a {
 	float: left;
-	padding: 1.5em 0;
+	padding: 24px 0;
 	width: 67.2px;
 	text-align: center;
 	text-decoration: none;
@@ -32,47 +32,47 @@
 }
 
 .nav a:hover {
-	background-color: #37e;
+	background-color: #25d;
+	color: #eee;
 }
 
 .article {
-	margin: 2em auto;
-	padding: 0 1em;
+	margin: 24px auto;
+	padding: 0 16px;
 	max-width: 640px;
 }
 
 .title {
-	margin: 1em 0;
+	margin: 24px 0;
 	text-align: center;
 }
 
 .content p {
-	margin: 1em 0;
+	margin: 16px 0;
 	text-indent: 2em;
 	text-align: justify;
-	line-height: 1.6em;
+	line-height: 2em;
 }
 
 .sup {
-	font-size: 0.6em;
-	line-height: 0.6em;
+	font-size: 0.5em;
+	line-height: 0.5em;
 	vertical-align: super;
 }
 
 .note {
-	line-height: 1.6em;
+	line-height: 2em;
 }
 
 .note h2 {
-	line-height: 2em;
 	font-size: 1em;
 }
 
 .footer {
-	padding: 1.5em 0;
+	padding: 24px 0;
 	border-top: 6px solid #fe3;
 	text-align: center;
-	background-color: #37c;
+	background-color: #36e;
 	color: #fff;
 }
 
