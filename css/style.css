@@ -90,6 +90,15 @@
 	line-height: 2em;
 }
 
+.article a {
+	text-decoration: none;
+	color: #36e;
+}
+
+.article a:hover {
+	color: #d25;
+}
+
 .sup {
 	font-size: 0.5em;
 	line-height: 0.5em;
