@@ -97,7 +97,7 @@
 
 .flow {
 	box-sizing: border-box;
-	width: calc(33.33% - 5.33px);
+	width: calc(25% - 6px);
 	border-radius: 8px;
 	background-color: #fff;
 	overflow: hidden;
