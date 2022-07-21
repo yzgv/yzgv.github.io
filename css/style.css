@@ -37,20 +37,44 @@
 }
 
 .main {
+	margin: auto;
+	padding: 0 16px;
+	max-width: 640px;
 	min-height: 720px;
 }
 
+.left, .right {
+	margin-bottom: 8px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.lmar {
+	margin-left: 8px;
+}
+
+.rmar {
+	margin-right: 8px;
+}
+
 .item {
-	margin: 8px auto;
+	box-sizing: border-box;
+	margin-top: 8px;
 	padding: 8px 16px;
-	max-width: 604px;
+	width: calc(50% - 4px);
 	border: 2px solid #ddd;
 	border-radius: 8px;
 	background-color: #f5f5f5;
 }
 
-.item h1 {
-	font-size: 1.2em;
+.item b, .item span {
+	display: block;
 }
 
 .item a {
@@ -62,27 +86,14 @@
 	color: #14c;
 }
 
-.item p {
-	color: #888;
-}
-
-.flows {
-	margin: auto;
-	max-width: 640px;
-}
-
-.left {
-	float: left;
-	margin: 0 16px 8px 0;
-}
-
-.right {
-	float: right;
-	margin: 0 0 8px;
+.item span {
+	font-size: 0.8em;
+	color: #aaa;
 }
 
 .flow {
-	width: 308px;
+	box-sizing: border-box;
+	width: calc(33.33% - 5.33px);
 	border: 2px solid #ddd;
 	border-radius: 8px;
 	overflow: hidden;
@@ -97,41 +108,52 @@
 	color: #14c;
 }
 
-.flow img {
+.flow img, .flow span {
 	display: block;
+}
+
+.flow img {
 	width: 100%;
 }
 
 .flow span {
-	display: block;
 	padding: 16px 8px;
 	font-weight: bold;
 	background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 672px) {
-	.item {
-		margin: 8px 16px;
-	}
-	
-	.left, .right {
+
+	.item.left, .item.right {
 		float: none;
-		margin: 8px 16px;
-	}
-	
-	.flow {
+		margin: 8px 0;
 		width: auto;
+	}
+
+	.flow.left, .flow.right {
+		float: none;
+		margin: 0 0 8px;
+	}
+
+	.flow.mlft {
+		float: left;
+	}
+
+	.flow.mrgt {
+		float: right;
+	}
+
+	.flow {
+		width: calc(50% - 4px);
 	}
 }
 
 .article {
-	margin: 24px auto;
-	padding: 0 16px;
-	max-width: 640px;
+	margin: 24px 0;
+	line-height: 2em;
 }
 
 .title {
-	margin: 24px 0;
 	text-align: center;
 }
 
@@ -139,7 +161,6 @@
 	margin: 8px 0;
 	text-indent: 2em;
 	text-align: justify;
-	line-height: 2em;
 }
 
 .article a {
@@ -151,25 +172,9 @@
 	color: #14c;
 }
 
-.sup {
-	font-size: 0.5em;
-	line-height: 0.5em;
-	vertical-align: super;
-}
-
 .sign {
 	margin-top: 24px;
 	text-align: right;
-	line-height: 2em;
-}
-
-.note {
-	margin-top: 24px;
-	line-height: 2em;
-}
-
-.note h2 {
-	font-size: 1em;
 }
 
 .footer {
