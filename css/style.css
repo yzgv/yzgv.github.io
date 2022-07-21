@@ -7,8 +7,12 @@
 	display: none;
 }
 
-.body {
+.gray {
 	background-color: #f6f6f6;
+}
+
+.white {
+	background-color: #fff;
 }
 
 .header {
@@ -69,11 +73,14 @@
 
 .item {
 	box-sizing: border-box;
-	margin-top: 8px;
 	width: calc(50% - 4px);
 	border-radius: 8px;
 	overflow: hidden;
 	background-color: #fff;
+}
+
+.item.first {
+	margin-top: 8px;
 }
 
 .item a, .item b, .item span {
@@ -103,6 +110,10 @@
 	overflow: hidden;
 }
 
+.flow a, .flow img, .flow span {
+	display: block;
+}
+
 .flow a {
 	text-decoration: none;
 	color: #36e;
@@ -110,10 +121,6 @@
 
 .flow a:hover {
 	color: #14c;
-}
-
-.flow img, .flow span {
-	display: block;
 }
 
 .flow img {
@@ -126,7 +133,6 @@
 }
 
 @media screen and (max-width: 672px) {
-
 	.item.left, .item.right {
 		float: none;
 		margin: 8px 0;
@@ -152,7 +158,7 @@
 }
 
 .article {
-	margin: 24px 0;
+	padding: 16px 0;
 	line-height: 2em;
 }
 
