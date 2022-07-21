@@ -7,6 +7,10 @@
 	display: none;
 }
 
+.body {
+	background-color: #f6f6f6;
+}
+
 .header {
 	border-bottom: 6px solid #fe3;
 	background-color: #36e;
@@ -66,18 +70,18 @@
 .item {
 	box-sizing: border-box;
 	margin-top: 8px;
-	padding: 8px 16px;
 	width: calc(50% - 4px);
-	border: 2px solid #ddd;
 	border-radius: 8px;
-	background-color: #f8f8f8;
+	overflow: hidden;
+	background-color: #fff;
 }
 
-.item b, .item span {
+.item a, .item b, .item span {
 	display: block;
 }
 
 .item a {
+	padding: 8px 16px;
 	text-decoration: none;
 	color: #36e;
 }
@@ -94,8 +98,8 @@
 .flow {
 	box-sizing: border-box;
 	width: calc(33.33% - 5.33px);
-	border: 2px solid #ddd;
 	border-radius: 8px;
+	background-color: #fff;
 	overflow: hidden;
 }
 
@@ -119,7 +123,6 @@
 .flow span {
 	padding: 16px 8px;
 	font-weight: bold;
-	background-color: #f8f8f8;
 }
 
 @media screen and (max-width: 672px) {
