@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.gird {
+	background-color: #f6f6f6;
+}
+
+.header {
+	background-color: #fff;
+	box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+	margin: auto;
+	max-width: 672px;
+	overflow: auto;
+}
+
+.scroll {
+	width: 672px;
+}
+
+.nav a {
+	float: left;
+	padding: 16px 0;
+	width: 67.2px;
+	text-align: center;
+	color: #000;
+}
+
+.nav a:hover {
+	background-color: #36e;
+	color: #fff;
+}
+
+.main {
+	margin: auto;
+	padding: 8px;
+	max-width: 640px;
+	min-height: 720px;
+}
+
+.item {
+	margin-bottom: 8px;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.item a {
+	display: block;
+	padding: 8px 16px;
+}
+
+.item a:hover {
+	color: #36e;
+}
+
+.left, .right {
+	margin-bottom: 8px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.flow {
+	box-sizing: border-box;
+	width: calc(50% - 4px);
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.flow a, .flow img, .flow span {
+	display: block;
+}
+
+.flow a:hover {
+	color: #36e;
+}
+
+.flow img {
+	width: 100%;
+}
+
+.flow span {
+	padding: 16px 8px;
+}
+
+.article {
+	padding: 16px;
+	line-height: 1.5em;
+}
+
+.title {
+	text-align: center;
+}
+
+.content p {
+	margin: 12px 0;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.article a {
+	color: #36e;
+}
+
+.sign {
+	margin-top: 24px;
+	text-align: right;
+}
+
+.footer {
+	padding: 24px 0;
+	text-align: center;
+	background-color: #222;
+	color: #eee;
+}
+
+.footer a {
+	color: #eee;
+}
