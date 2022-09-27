@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title>工资计算器</title>
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="bookmark" href="../favicon.ico" />
+		<link rel="stylesheet" href="../style.css" />
+		<style type="text/css">
+			#input {
+				padding: 4px 8px;
+				height: 22px;
+				border-width: 1px 0 1px 1px;
+				border-color: #aaa;
+				border-style: solid;
+				border-radius: 8px 0 0 8px;
+				outline: none;
+			}
+			#input:focus, #input:hover {
+				border-color: #36e;
+			}
+			#calc {
+				padding: 4px 8px;
+				height: 32px;
+				border-width: 1px 1px 1px 0;
+				border-color: #36e;
+				border-style: solid;
+				border-radius: 0 8px 8px 0;
+				outline: none;
+				vertical-align: bottom;
+				background-color: #36e;
+				color: #fff;
+			}
+			#calc:hover {
+				background-color: #25d;
+			}
+			#output {
+				padding: 16px 0;
+			}
+			.content {
+				padding-top: 16px;
+			}
+			pre {
+				overflow-x: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<div class="scroll">
+					<a href="../index.html">推荐</a>
+					<a href="../study.html">学习</a>
+					<a href="#">项目</a>
+					<a href="#">资源</a>
+					<a href="#">收藏</a>
+					<a href="#">社区</a>
+					<a href="#">故事</a>
+					<a href="#">关于</a>
+					<a href="#">注册</a>
+					<a href="#">登录</a>
+				</div>
+			</nav>
+		</header>
+		<section class="main">
+			<article class="article">
+				<h1 class="title">工资计算器</h1>
+				<div class="content">
+					<div><input type="number" placeholder="输入基本工资" id="input" /><input type="button" value="计算工资" id="calc" /></div>
+					<div id="output"></div>
+					<div>
+<pre><code>//作者：04F2104 袁珍贵
+var bs, as, ts;
+document.getElementById("calc").onclick = function() {
+	bs = Number(document.getElementById("input").value);
+	output = document.getElementById("output");
+	if(bs >= 1000) {
+		as = bs * 0.2;
+	} else if(bs >= 800) {
+		as = bs * 0.15;
+	} else if(bs >= 0) {
+		as = bs * 0.1;
+	} else {
+		output.innerHTML = "";
+		var msg = document.createTextNode("输入错误");
+		output.appendChild(msg)
+		return;
+	}
+	ts = bs + as;
+	output.innerHTML = "";
+	var div = document.createElement("div");
+	div.innerHTML = "基本工资：" + bs + "元&lt;br /&gt;增加工资：" + as + "元&lt;br /&gt;总工资：" + ts + "元";
+	output.appendChild(div);
+}
+</code></pre>
+					</div>
+				</div>
+				<div class="sign">
+					<p>2022年9月27日</p>
+					<p>尹玗</p>
+				</div>
+			</article>
+		</section>
+		<footer class="footer">&copy; 2022 <a href="mailto:leojobs@qq.com">尹玗</a></footer>
+		<script type="text/javascript">
+			var bs, as, ts;
+			document.getElementById("calc").onclick = function() {
+				bs = Number(document.getElementById("input").value);
+				output = document.getElementById("output");
+				if(bs >= 1000) {
+					as = bs * 0.2;
+				} else if(bs >= 800) {
+					as = bs * 0.15;
+				} else if(bs >= 0) {
+					as = bs * 0.1;
+				} else {
+					output.innerHTML = "";
+					var msg = document.createTextNode("输入错误");
+					output.appendChild(msg)
+					return;
+				}
+				ts = bs + as;
+				output.innerHTML = "";
+				var div = document.createElement("div");
+				div.innerHTML = "基本工资：" + bs + "元<br />增加工资：" + as + "元<br />总工资：" + ts + "元";
+				output.appendChild(div);
+			}
+		</script>
+	</body>
+</html>
