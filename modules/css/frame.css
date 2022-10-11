@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+@media screen and (max-width: 549px) {
+	.hdr {
+		margin: 6px 6px 0;
+	}
+	.nav {
+		margin: auto;
+		max-width: 470.4px;
+		overflow: auto;
+	}
+	.srl {
+		width: 470.4px;
+	}
+	.srl a {
+		float: left;
+		padding: 16px 0;
+		width: 67.2px;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+	}
+	.srl a:hover {
+		background-color: #36e;
+		border-radius: 0 1em;
+		color: #fff;
+	}
+	.stn {
+		height: 750px;
+	}
+	.ftr {
+		padding: 24px 0;
+		text-align: center;
+	}
+}
+@media screen and (min-width: 500px) {
+	.hdr {
+		float: left;
+		width: 20%;
+		max-width: 200px;
+	}
+	.nav {
+		margin: 6px 0 0 6px;
+	}
+	.nav a {
+		display: block;
+		padding: 24px 0;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+	}
+	.nav a:hover {
+		background-color: #36e;
+		border-radius: 0 1em;
+		color: #fff;
+	}
+	.stn {
+		float: right;
+		width: 80%;
+		height: 750px;
+	}
+	.ftr {
+		clear: both;
+		padding: 24px 0;
+		text-align: center;
+	}
+}
