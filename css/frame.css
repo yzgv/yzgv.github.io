@@ -1,7 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	}
+}
+*::-webkit-scrollbar {
+	display: none;
+}
 @media screen and (max-width: 549px) {
 	.hdr {
 		margin: 6px 6px 0;
