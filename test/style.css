@@ -23,6 +23,7 @@
 	border-width: 2px;
 	border-radius: 1em 1em 0 0;
 	outline: none;
+	color: #000;
 }
 #start, #end {
 	padding: 8px;
