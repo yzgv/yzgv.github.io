@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+body {
+	height: 100vh;
+	overflow: scroll;
+}
+#window {
+	margin: 48px auto 74px;
+	height: 100vh;
+	overflow: scroll;
+	width: 100%;
+	max-width: 360px;
+	background-color: #f6f6f6;
+}
+#title {
+	position: fixed;
+	top: 0;
+	padding: 1em 0;
+	width: 100%;
+	max-width: 360px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+	background: linear-gradient(to right, #0df, #0af);
+	color: #fff;
+}
+#wrap {
+	position: fixed;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 8px 8px 0;
+	width: 100%;
+	max-width: 360px;
+	background-color: #fafafa;
+}
+
+#msg {
+	float: left;
+	box-sizing: border-box;
+	padding: 4px 12px;
+	width: 79%;
+	height: 32px;
+	border: none;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: sans-serif;
+	outline: none;
+}
+#send {
+	float: right;
+	box-sizing: border-box;
+	width: 20%;
+	border: none;
+	border-radius: 16px;
+	height: 32px;
+	background-color: #0df;
+	color: #fff;
+}
+#send:hover {
+	background-color: #0bf;
+}
+#send:active {
+	background-color: #0af;
+}
+.func {
+	border: none;
+	background-color: transparent;
+	padding: 8px;
+	font-weight: bold;
+	color: #222;
+}
+.func.active {
+	color: #0af;
+}
+#msgs {
+	list-style: none;
+}
+li span {
+	float: right;
+	padding: 8px;
+	border-radius: 8px;
+	background-color: #0bf;
+}
+li a {
+	float: right;
+	text-decoration: none;
+	margin: 8px 4px;
+	color: #fff;
+}
+li a.cpy {
+	margin: 8px 4px 4px 8px;
+	color: #fd0;
+}
+li a.del {
+	color: #d00;
+}
+li {
+	float: right;
+	width: 100%;
+	margin: 0 8px 16px;
+}
+.clear {
+	clear: both;
+	height: 16px;
+}
+li:first-child {
+	margin: 16px 8px;
+}
