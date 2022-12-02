@@ -5,110 +5,143 @@
 *::-webkit-scrollbar {
 	display: none;
 }
-body {
-	height: 100vh;
-	overflow: scroll;
-}
-#window {
-	margin: 48px auto 74px;
+.window {
+	margin: 48px auto 92px;
+	box-sizing: border-box;
 	height: 100vh;
 	overflow: scroll;
 	width: 100%;
-	max-width: 360px;
-	background-color: #f6f6f6;
+	max-width: 380px;
+	background-color: #f2f2f2;
 }
-#title {
+.title {
 	position: fixed;
 	top: 0;
-	padding: 1em 0;
+	padding: 16px 0;
 	width: 100%;
-	max-width: 360px;
+	max-width: 380px;
 	text-align: center;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 16px;
-	background: linear-gradient(to right, #0df, #0af);
+	background: linear-gradient(90deg, #0df, #0bf, #0af);
 	color: #fff;
 }
-#wrap {
+.wrap {
 	position: fixed;
 	bottom: 0;
-	box-sizing: border-box;
-	padding: 8px 8px 0;
+	padding: 12px 12px 0;
 	width: 100%;
-	max-width: 360px;
-	background-color: #fafafa;
+	max-width: 356px;
+	background-color: #f8f8f8;
 }
-
-#msg {
+.send, .copy, .recall {
+	cursor: pointer;
+}
+.msg {
 	float: left;
 	box-sizing: border-box;
-	padding: 4px 12px;
+	padding: 6px 12px;
 	width: 79%;
-	height: 32px;
+	height: 36px;
 	border: none;
+	border-radius: 18px;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: sans-serif;
 	outline: none;
+	font-family: sans-serif;
+	background-color: #fff;
 }
-#send {
+.send {
 	float: right;
-	box-sizing: border-box;
 	width: 20%;
 	border: none;
-	border-radius: 16px;
-	height: 32px;
+	border-radius: 18px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 36px;
+	height: 36px;
 	background-color: #0df;
 	color: #fff;
 }
-#send:hover {
+.send:hover {
 	background-color: #0bf;
 }
-#send:active {
+.send:active {
 	background-color: #0af;
 }
-.func {
-	border: none;
-	background-color: transparent;
-	padding: 8px;
-	font-weight: bold;
-	color: #222;
+.icon {
+	float: left;
+	padding: 8px 12px 12px 0;
+	height: 24px;
+	width: 24px;
 }
-.func.active {
-	color: #0af;
+.icon.copy {
+	background: url(img/copy1.png) center / 24px no-repeat;
 }
-#msgs {
+.icon.recall {
+	background: url(img/recall1.png) center / 24px no-repeat;
+}
+.icon.copy:hover {
+	background-image: url(img/copy2.png);
+}
+.icon.recall:hover {
+	background-image: url(img/recall2.png);
+}
+.icon.copy:active {
+	background-image: url(img/copy3.png);
+}
+.icon.recall:active {
+	background-image: url(img/recall3.png);
+}
+.msgs {
 	list-style: none;
 }
-li span {
+li .txt {
 	float: right;
-	padding: 8px;
-	border-radius: 8px;
+	padding: 12px;
+	font-size: 16px;
+	line-height: 16px;
+	border-radius: 12px;
 	background-color: #0bf;
 }
-li a {
+li .cpy, li .rcl {
 	float: right;
-	text-decoration: none;
-	margin: 8px 4px;
-	color: #fff;
+	width: 0;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
 }
-li a.cpy {
-	margin: 8px 4px 4px 8px;
-	color: #fd0;
+.display {
+	width: 24px;
+	margin: 0 0 0 8px;
+	padding: 8px;
 }
-li a.del {
-	color: #d00;
+li .cpy {
+	background: #2f2 url(img/copy.png) center / 16px 16px no-repeat;
+}
+li .rcl {
+	background: #fe2 url(img/recall.png) center / 16px 16px no-repeat;
+}
+li .cpy:hover {
+	background-color: #1e1;
+}
+li .rcl:hover {
+	background-color: #ed1;
+}
+li .cpy:active {
+	background-color: #0d0;
+}
+li .rcl:active {
+	background-color: #dc0;
 }
 li {
 	float: right;
+	box-sizing: border-box;
 	width: 100%;
-	margin: 0 8px 16px;
-}
-.clear {
-	clear: both;
-	height: 16px;
+	padding: 0 12px 16px;
 }
 li:first-child {
-	margin: 16px 8px;
+	padding: 16px 12px;
 }

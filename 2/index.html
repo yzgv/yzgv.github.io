@@ -7,20 +7,17 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="window">
-			<h1 id="title">消息</h1>
-			<ul id="msgs">
-				<div class="clear"></div>
-			</ul>
-			<div id="wrap">
-				<div id="ctrl">
-					<textarea id="msg"></textarea>
-					<input type="button" value="发送" id="send" />
+		<div class="window">
+			<h1 class="title">消息</h1>
+			<ul class="msgs"></ul>
+			<div class="wrap">
+				<div class="ctrl">
+					<textarea class="msg"></textarea>
+					<div class="send">发送</div>
 				</div>
-				<div id="shift">
-					<input type="button" value="复制" id="copy" class="func" />
-					<input type="button" value="撤回" id="recall" class="func" />
-					<input type="button" value="删除" id="delete" class="func" />
+				<div class="shift">
+					<div class="copy icon"></div>
+					<div class="recall icon"></div>
 				</div>
 			</div>
 		</div>
