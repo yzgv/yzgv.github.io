@@ -41,8 +41,9 @@
 .msg {
 	float: left;
 	box-sizing: border-box;
+	margin: 0 2% 0 0;
 	padding: 6px 12px;
-	width: 75%;
+	width: 78%;
 	height: 36px;
 	border: none;
 	border-radius: 18px;
@@ -53,8 +54,7 @@
 	background-color: #fff;
 }
 .send {
-	float: right;
-	box-sizing: border-box;
+	float: left;
 	width: 20%;
 	border: none;
 	border-radius: 18px;
